@@ -2,10 +2,8 @@ from aiohttp.web_exceptions import HTTPConflict, HTTPBadRequest, HTTPNotFound
 from aiohttp_apispec import request_schema, response_schema, docs
 
 from app.quiz.models import Answer
-from app.quiz.schemes import (
-    ThemeSchema, QuestionSchema, ThemeResponseSchema, ThemeRequestSchema,
-    ThemeListResponseSchema, QuestionResponseSchema, QuestionRequestSchema, QuestionListResponseSchema,
-)
+from app.quiz.schemes import ThemeSchema, QuestionSchema, ThemeResponseSchema, ThemeRequestSchema, \
+    ThemeListResponseSchema, QuestionResponseSchema, QuestionRequestSchema, QuestionListResponseSchema
 from app.web.app import View
 from app.web.mixins import AuthRequiredMixin
 from app.web.utils import json_response

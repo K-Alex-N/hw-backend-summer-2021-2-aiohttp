@@ -2,8 +2,6 @@ import typing
 from hashlib import sha256
 from typing import Optional
 
-
-
 from app.base.base_accessor import BaseAccessor
 from app.admin.models import Admin
 
@@ -13,7 +11,6 @@ if typing.TYPE_CHECKING:
 
 class AdminAccessor(BaseAccessor):
     async def connect(self, app: "Application"):
-        # done: создать админа по данным в config.yml здесь
         admin = await self.create_admin(
             self.app.config.admin.email,
             self.app.config.admin.password

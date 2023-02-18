@@ -1,7 +1,6 @@
 import base64
 import json
 import typing
-from hashlib import sha256
 
 from aiohttp.web_exceptions import HTTPUnprocessableEntity, HTTPException, HTTPForbidden
 from aiohttp.web_middlewares import middleware
